@@ -11933,9 +11933,8 @@ function Price1488_resumeMining() {
     const income = Price1488_calcIncome() / 60;
     const space  = stor.capacity - Price1488_state.storageUsed;
     const actual = Math.min(income, space);
-    if (stor.fast) {
+        if (stor.fast) {
       Price1488_state.storageUsed += actual;
-      if (typeof addBalance === "function") addBalance(actual);
       if (Math.random() < Price1488_SSD_BREAK_CHANCE) {
         Price1488_state.ssdBroken = true;
         Price1488_state.mining    = false;
