@@ -8344,7 +8344,7 @@ const allItems = [
   {name:"НіхєраСобі…", img:"kolek35.png", rarity:"Виняткова", collection:"Весна26"},
   {name:"РусняЗнайдена", img:"kolek36.png", rarity:"Виняткова", collection:"Весна26"},
   {name:"ТвійНайкращийДруг", img:"kolek37.png", rarity:"Звичайна", collection:"Весна26"},
-  {name:"ОстаннійДеньЛіта", img:"kolek38.png", rarity:"Звичайна", collection:"Весна26"},
+  {name:"ОстаннійДеньЛіта…", img:"kolek38.png", rarity:"Звичайна", collection:"Весна26"},
 
   // Фловерповер26
   {name:"NyanCat", img:"flow1.png", rarity:"Спеціальна", collection:"FlowerPower26"},
