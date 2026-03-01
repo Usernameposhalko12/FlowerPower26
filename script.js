@@ -181,7 +181,7 @@ localStorage.setItem(currentUser + "_inventory", JSON.stringify(inventory));
 
   function loadData() {
   if (!currentUser) return;
-  balance = parseInt(localStorage.getItem(currentUser + "_balance")) || 0;
+balance = Math.round(parseFloat(localStorage.getItem(currentUser + "_balance") || "0"));
   nikus = parseInt(localStorage.getItem(currentUser + "_nikus")) || 0;
   OPEX = parseInt(localStorage.getItem(currentUser + "_OPEX")) || 0;
   lastPromoTimes = JSON.parse(localStorage.getItem(currentUser + "_lastPromoTimes")) || [];
