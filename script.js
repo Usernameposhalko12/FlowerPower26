@@ -6884,7 +6884,7 @@ function showTradeError(id) {
 
 function buyBalance(amount, cost) {
   if ((nikus||0) >= cost) {
-    nikus -= cost; balance = (balance||0) + amount;
+    nikus -= cost; balance = Math.round((balance||0) + amount);
     saveData?.();
   } else {
     const el = document.getElementById("shopError");
