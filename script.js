@@ -7471,16 +7471,17 @@ function gfDoClaim(track, lvl) {
   gfRenderTrack(track);
 }
 
-// ── покупка premium ──
 function gfBuyPremium() {
   if (gfHasPremium()) { alert("У тебе вже є Premium Pass!"); return; }
-  if (balance < 250)  { alert("Недостатньо нікусів! Потрібно 250."); return; }
-  balance -= 250;
+  if (nikus < 250)  { alert("Недостатньо нікусів! Потрібно 250."); return; }
+  nikus -= 250;
+  localStorage.setItem(currentUser + "_nikus", nikus);
   gfSetPremium();
   saveData();
   alert("🎉 Premium Pass активовано! Тепер доступні всі преміум-нагороди!");
   openGameFlamePass();
 }
+
 
 // ══════════════════════════════════════════════════════
 //  ЗАВДАННЯ — повністю переписано
